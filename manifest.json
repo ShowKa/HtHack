@@ -1,0 +1,44 @@
+{
+  "name": "HtHack",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Html Developper Tool",
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_title": "Goodday, mate!",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "contextMenus",
+    "storage"
+  ],
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png"
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+    , "persistent": false
+  },
+  "content_scripts": [{
+    "matches": ["http://*/*", "https://*/*"],
+    "js": [
+      "js/lib/jquery-2.1.1.min.js",
+      "htHack.js"
+    ],
+    "css": ["css/htHack.css"]
+  }],
+  "commands": {
+    "_execute_browser_action": {
+      // "suggested_key": {
+      //   "windows": "Ctrl+Shift+K",
+      //   "mac": "Command+Shift+K",
+      //   "chromeos": "Ctrl+Shift+K",
+      //   "linux": "Ctrl+Shift+K"
+      // }
+    }
+  },
+  "options_page": "options/options.html"
+}

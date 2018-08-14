@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HtHack Options</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <link rel="stylesheet" href="options.css" />
+</head>
+
+<body>
+    <div class="bs-example" id="form-box">
+        <div class="form-group" id="id-box">
+            <label for="id">id</label>
+            <input type="textbox" class="form-control" id="id">
+        </div>
+        <div class="form-group">
+            <label for="url">url pattern</label>
+            <input type="textbox" class="form-control" id="url">
+        </div>
+        <div class="form-group">
+            <label for="selector">selector</label>
+            <input type="textbox" class="form-control" id="selector">
+        </div>
+        <div class="form-group">
+            <label for="event">event</label>
+            <select type="textbox" class="form-control" id="event">
+            </select>
+            <input type="text" class="form-control" id="defaultValue">
+        </div>
+        <div class="form-group">
+            <button id="save" class="btn-default">Save</button>
+            <button id="newOption" class="btn-default">New Option</button>
+        </div>
+        <div class="form-group">
+            <div id="status"></div>
+        </div>
+    </div>
+    <!-- saved rules -->
+    <div class="bs-example" id="rules-box">
+        <table id="rules">
+            <thead>
+                <tr>
+                    <td />
+                    <td />
+                    <td>url pattern</td>
+                    <td>selector</td>
+                    <td>event</td>
+                    <td>default</td>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <button id="remove">Remove Saved Rules</button>
+</body>
+<script src="../js/lib/jquery-2.1.1.min.js"></script>
+<script src="options.js"></script>
+
+</html>

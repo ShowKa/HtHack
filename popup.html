@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/popup.css" />
+</head>
+
+<body>
+    <form id="form">
+        <fieldset>
+            <legend>hiddens</legend>
+            <button id="revealHiddens">reveal</button>
+            <button id="concealHiddens">conceal</button>
+            <label for="revId">#id</label>
+            <input id="revId" type="checkbox" name="revId" value="1">
+            <label for="revName">[name]</label>
+            <input id="revName" type="checkbox" name="revName" value="1">
+            <label for="revClass">.class</label>
+            <input id="revClass" type="checkbox" name="revClass" value="1">
+        </fieldset>
+        <fieldset>
+            <legend>hidden columns in jQgrid</legend>
+            <button id="revealHiddensJQgrid">reveal</button>
+            <button id="concealHiddensJQgrid">conceal</button>
+        </fieldset>
+        <fieldset>
+            <legend>disabled</legend>
+            <button id="activate">activate</button>
+            <button id="inactivate">inactivate</button>
+        </fieldset>
+        <fieldset>
+            <legend>utility</legend>
+            <label for="inspection">inspection</label>
+            <input id="inspection" type="checkbox" name="inspection" value="1">
+        </fieldset>
+    </form>
+    <script src="js/lib/jquery-2.1.1.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
